@@ -1,0 +1,16 @@
+
+.login{	/* 再便携自己的class样式 */
+    width: 320px;
+    margin: 100px auto 0 auto;
+}
+.login .panel-heading {  /* 标题居中、改颜色 */
+    text-align: center;
+    color: #D9534F;
+}
+.login label{	/* label框改颜色 */
+    color: #D9534F;
+}
+
+body {
+	background: url(img/milan.jpg);
+}

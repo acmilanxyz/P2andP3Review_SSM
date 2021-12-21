@@ -1,0 +1,27 @@
+.my-body{
+    padding: 5px;
+}
+.my-body .panel{
+    margin-bottom: 5px;
+}
+.my-body .panel .panel-body{
+    background-color: #d9edf7;
+    display: flex;
+    flex-direction: row;
+}
+.my-body .panel .panel-body >div:last-child{
+    margin-left: 5px;
+}
+.my-body .table{
+    margin-bottom: 5px;
+}
+.my-body >div:last-child{
+    text-align: right;
+    padding-right: 10px;
+}
+.my-body >div:last-child .pagination{
+    margin: 0;
+}
+.form-horizontal{
+    color: #2e6da4;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd"
+>
+
+<!--    增加自动扫描service包：org.spoto.service.implspringmvc，SpringMVC-->
+    <context:component-scan base-package="org.spoto.utlis,org.spoto.service.implspringmvc"></context:component-scan>
+
+    <bean id="sqlPropertyConfigurer" class="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer">
+        <property name="location" value="classpath:db.properties"></property>
+        <property name="fileEncoding" value="UTF-8"></property>
+    </bean>
+</beans>
